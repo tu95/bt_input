@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView android:id="@+id/textViewTitle" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="蓝牙鼠标触摸板" android:textSize="20sp"
+        android:layout_centerHorizontal="true" android:layout_marginBottom="20dp" />
+
+    <View android:id="@+id/touchpadView" android:layout_width="match_parent"
+        android:layout_height="300dp" android:layout_below="@id/textViewTitle"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_corner_background" android:layout_marginTop="20dp" />
+
+    <TextView android:id="@+id/textViewCoordinates" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@id/touchpadView"
+        android:layout_centerHorizontal="true" android:layout_marginTop="20dp"
+        android:text="X: 0, Y: 0" android:textSize="16sp" />
+
+    <!-- 蓝牙相关的按钮和状态显示可以后续添加 -->
+    <Button android:id="@+id/buttonConnect" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" android:layout_marginBottom="30dp"
+        android:text="连接蓝牙 (待实现)" />
+
+</RelativeLayout>
